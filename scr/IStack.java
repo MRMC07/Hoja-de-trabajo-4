@@ -1,9 +1,13 @@
 package scr;
-public interface IStack {
+public interface IStack<E> {
 
-    void push(int value);
-    int pop();
-    int peek();
+    void push(E item);
+
+    E pop();
+
+    E peek();
+
     boolean isEmpty();
+
     int size();
 }
